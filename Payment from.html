@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Payment Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <<form>
+            <h1>Payment Form</h1>
+            <p> mindedary to fill this block*</P>
+            <h2>Contact Informetion</h2>
+            <p>Name: *<input type="text"name="name" required></p>
+            <p>
+            <fieldset>
+                <legend>Gender</legend>
+                Male<input type="radio"name="gender"id="male"> <br> Female<input type="radio"name="gender"id="Female"> <br> Other<input type="radio" name="gender" id="other">
+            </p>
+            </fieldset>
+            <p>Address:<textarea name="address"id="address" cols="10" rows="8"></textarea></p>
+            <p>Email:<input type="email"name="email"id="email"></p>
+            <p>Pincode:<input type="number"name="pincode"id="pincode"></p>
+            <h2>Payment Information</h2>
+            <p>card Type: 
+                <select name="card_type"id="card_type" required>
+                    <option value="">--Select a card Type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="mastercard">Visa</option>
+                </select>
+            </p>
+            <p>
+                Card Number <input type="Card_number" name="card_number" id="Card_number">
+            </p>
+            <p>
+                Experation Date:<input type="Date" name="exp_date"id="Exp_date">
+            </p>
+            <p>
+                CVV:<input type="password"name="cvv"id="cvv"</p>
+            <br>
+            <input type="submit" value="Pay Now">
+          
+         
+        </form>
+    </body>
+</html>
